@@ -1,0 +1,26 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFECB3"
+    android:orientation="vertical"
+    android:padding="16dp" >
+
+    <EditText
+        android:id="@+id/et_username"
+        style="@style/edittextWhiteFrame"
+        android:hint="@string/TheDefaultUserNameAdmin"
+        android:maxLength="20" />
+
+    <EditText
+        android:id="@+id/et_password"
+        style="@style/edittextWhiteFrame"
+        android:hint="@string/TheDefaultPassword123456"
+        android:inputType="textPassword"
+        android:maxLength="20" />
+
+    <Button
+        style="@style/buttonWhiteFrame"
+        android:onClick="login"
+        android:text="@string/login" />
+
+</LinearLayout>

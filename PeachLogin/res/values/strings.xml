@@ -1,0 +1,8 @@
+<resources>
+
+    <string name="app_name">PeachLogin</string>
+    <string name="TheDefaultUserNameAdmin">默认用户名admin</string>
+    <string name="TheDefaultPassword123456">默认密码123456</string>
+	<string name="login">登陆</string>
+
+</resources>
