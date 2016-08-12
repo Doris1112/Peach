@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">PeachLuacherScene</string>
+    
+    <string name="activity_not_found">Application is not installed on your phone.</string>
+    <string name="menu_mainmenu">Mainmenu</string>
+    <string name="menu_settings">System settings</string>
+    <string name="menu_classic_launcher">Classic launcher</string>
+    <string name="application_name">Launcher</string>
+    <string name="scene_not_found">Don\'t find any scenes in you device</string>
+
+</resources>

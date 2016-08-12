@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<hotseat
+	background="hotseat_bg.png"
+	pos_x="0"
+	pos_y="700" >
+    <seat
+        type="ImageButton"
+        background="dial_icon.png"
+        uri="intent:#Intent;action=android.intent.action.MAIN;component=com.android.contacts/.DialtactsActivity;end"
+        account="DIAL"
+        pos_x="35"
+        pos_y="702" />
+    <seat
+        type="ImageButton"
+        background="message_icon.png"
+        uri="intent:#Intent;action=android.intent.action.MAIN;component=com.android.mms/.ui.ConversationList;end"
+        account="MESSAGE"
+        pos_x="198"
+        pos_y="702" />  
+    <seat
+        type="MainmenuButton"
+        background="mainmenu_icon.png"
+        pos_x="329"
+        pos_y="702" />              	
+</hotseat>
+
+<page
+	background="scene_indoor_bg_0.png" >
+		<shortcut
+        type="ImageButton"
+        background="music.png"
+        uri="intent:#Intent;action=android.intent.action.MAIN;component=com.android.music/.MusicBrowserActivity;end"
+        account="MUSIC"
+        pos_x="27"
+        pos_y="240" />
+    <shortcut
+        type="ImageButton"
+        background="gallery.png"
+        uri="intent:#Intent;action=android.intent.action.MAIN;component=com.android.gallery3d/.app.Gallery;end"
+        account="GALLERY"
+        pos_x="121"
+        pos_y="457" />
+    <shortcut
+        type="AnalogClock"
+        background="clock_dial.png"
+        hand_hour="clock_hour.png"
+        hand_minute="clock_minute.png"
+        uri="intent:#Intent;action=android.intent.action.MAIN;category=android.intent.category.DESK_DOCK;end"
+        account="ANALOGCLOCK"
+        pos_x="242"
+        pos_y="257" /> 
+    <shortcut
+        type="ImageButton"
+        background="setting.png"
+        uri="intent:#Intent;action=android.intent.action.MAIN;component=com.android.settings/.Settings;end"
+        pos_x="376"
+        pos_y="436" />
+</page>
+
+<page
+	background="scene_indoor_bg_1.png" >
+	  <shortcut
+        type="ImageButton"
+        background="browser.png"
+        uri="intent:#Intent;action=android.intent.action.MAIN;component=com.android.browser/.BrowserActivity;end"
+        account="BROWSER"
+        pos_x="86"
+        pos_y="415" />
+    <shortcut
+        type="ImageButton"
+        background="video.png"
+        uri="intent:#Intent;action=android.intent.action.MAIN;component=com.android.gallery3d/.app.VideoActivity;end"
+        account="VIDEO"
+        pos_x="118"
+        pos_y="183" />
+    <shortcut
+        type="ImageButton"
+        background="ebook.png"
+        uri="intent:#Intent;action=android.intent.action.MAIN;component=com.iyd.reader.ReadingJoy/com.sensky.sunshinereader.logo.logo;end"
+        account="EBOOK"
+        pos_x="193"
+        pos_y="426" />
+    <shortcut
+        type="ImageButton"
+        background="qq.png"
+        uri="intent:#Intent;action=android.intent.action.MAIN;component=com.tencent.mobileqq/.activity.SplashActivity;end"
+        pos_x="278"
+        pos_y="525" />
+     <shortcut
+        type="ImageButton"
+        background="weixin.png"
+        uri="intent:#Intent;action=android.intent.action.MAIN;component=com.tencent.mm/.ui.LauncherUI;end"
+        pos_x="368"
+        pos_y="232" />     
+</page>
+
+<page
+	background="scene_indoor_bg_2.png" >
+	  <shortcut
+        type="ImageButton"
+        background="calllist.png"
+        uri="intent:#Intent;action=android.intent.action.MAIN;component=com.android.contacts/.DialtactsCallsListEntryActivity;end"
+        account="CONTACTSPEOPLE"
+        pos_x="74"
+        pos_y="561" /> 
+    <shortcut
+        type="ImageButton"
+        background="email.png"
+        uri="intent:#Intent;action=android.intent.action.MAIN;component=com.android.email/.activity.Welcome;end"
+        account="EMAIL"
+        pos_x="94"
+        pos_y="70" />
+    <shortcut
+        type="ImageButton"
+        background="contact.png"
+        uri="intent:#Intent;action=android.intent.action.MAIN;component=com.android.contacts/.DialtactsContactsEntryActivity;end"
+        account="CONTACT"
+        pos_x="294"
+        pos_y="516" />
+    <shortcut
+        type="Calendar"
+        background="calendar.png"
+        year_x="23"
+        year_y="16"
+        year_pic="year0.png;year1.png;year2.png;year3.png;year4.png;year5.png;year6.png;year7.png;year8.png;year9.png"
+        month_x="23"
+        month_y="50"
+        month_pic="month1.png;month2.png;month3.png;month4.png;month5.png;month6.png;month7.png;month8.png;month9.png;month10.png;month11.png;month12.png"
+        date_x="23"
+        date_y="78"
+        date_pic="date0.png;date1.png;date2.png;date3.png;date4.png;date5.png;date6.png;date7.png;date8.png;date9.png"
+        uri="intent:#Intent;action=android.intent.action.MAIN;category=android.intent.category.APP_CALENDAR;end"
+        account="CALENDAR"
+        pos_x="322"
+        pos_y="235" />
+</page>
+
+<page
+	background="scene_indoor_bg_3.png" >
+	  <shortcut
+        type="ImageButton"
+        background="note.png"
+        uri="intent:#Intent;action=android.intent.action.MAIN;component=com.sprdroid.note/.NoteActivity;end"
+        account="NOTE"
+        pos_x="107"
+        pos_y="503" />
+		<shortcut
+        type="ImageButton"
+        background="camera.png"
+        uri="intent:#Intent;action=android.intent.action.MAIN;component=com.android.camera/.Camera;end"
+        account="CAMERA"
+        pos_x="191"
+        pos_y="285" />
+		<shortcut
+        type="ImageButton"
+        background="calculator.png"
+        uri="intent:#Intent;action=android.intent.action.MAIN;component=com.android.calculator2/.Calculator;end"
+        account="CALCULATOR"
+        pos_x="348"
+        pos_y="381" />
+</page>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <string name="activity_not_found">"應用程式未安裝"</string>
+    <string name="menu_mainmenu">"主菜單"</string>
+    <string name="menu_settings">"系統設置"</string>
+    <string name="menu_classic_launcher">"經典桌面"</string>
+    <string name="application_name">"場景桌面"</string>
+	    <string name="scene_not_found">未在手機中找到任何主題</string>   
+</resources>

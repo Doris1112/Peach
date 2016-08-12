@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <com.doris.peachlauncherscene.view.TitlePageIndicator
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/titles"
+        android:layout_width="match_parent"
+        android:background="@drawable/main_bg_repeat"
+        android:layout_height="wrap_content"
+        android:textColor="#AAA"
+        app:selectedColor="#FFF"
+        app:footerIndicatorStyle="triangle" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/scene_choose_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#0000"
+        android:flipInterval="30"
+        android:persistentDrawingCache="animation" />
+
+</LinearLayout>

@@ -1,0 +1,59 @@
+<resources>
+
+    <dimen name="apps_customize_cell_width">74dp</dimen>
+    <dimen name="apps_customize_cell_height">82dp</dimen>
+    <dimen name="apps_customize_max_gap">18dp</dimen>
+    <dimen name="tray_height">50dp</dimen>
+    
+    <dimen name="apps_customize_pageLayoutWidthGap">-1dp</dimen>
+    <dimen name="apps_customize_pageLayoutHeightGap">-1dp</dimen>
+    <dimen name="apps_customize_pageLayoutPaddingTop">10dp</dimen>
+    <dimen name="apps_customize_pageLayoutPaddingBottom">10dp</dimen>
+    <dimen name="apps_customize_pageLayoutPaddingLeft">5dp</dimen>
+    <dimen name="apps_customize_pageLayoutPaddingRight">5dp</dimen>
+    
+    <dimen name="window_top">30dp</dimen>
+    <dimen name="email_left">240dp</dimen>
+    <dimen name="email_top">350dp</dimen>
+    <dimen name="calendar_month_text_size">18sp</dimen>
+    <dimen name="calendar_day_text_size">25sp</dimen>
+    <dimen name="calendar_left">251dp</dimen>
+    <dimen name="calendar_top">298dp</dimen>
+    <dimen name="calllog_left">150dp</dimen>
+    <dimen name="calllog_top">128dp</dimen>
+    <dimen name="clock_left">245dp</dimen>
+    <dimen name="clock_top">140dp</dimen>
+    <dimen name="recorder_left">230dp</dimen>
+    <dimen name="recorder_top">208dp</dimen>
+    <dimen name="analogclock_left">10dp</dimen>
+    <dimen name="analogclock_top">35dp</dimen>
+    <dimen name="note_left">9dp</dimen>
+    <dimen name="note_top">210dp</dimen>
+    <dimen name="backlight_left">39dp</dimen>
+    <dimen name="backlight_top">270dp</dimen>
+    <dimen name="contact_left">210dp</dimen>
+    <dimen name="contact_top">301dp</dimen>
+    <dimen name="gallery_left">189dp</dimen>
+    <dimen name="gallery_top">87dp</dimen>
+    <dimen name="gallery_light_left">208dp</dimen>
+    <dimen name="gallery_light_top">64dp</dimen>
+    <dimen name="video_left">78dp</dimen>
+    <dimen name="video_top">160dp</dimen>
+    <dimen name="music_left">260dp</dimen>
+    <dimen name="music_top">300dp</dimen>
+    <dimen name="browser_left">215dp</dimen>
+    <dimen name="browser_top">50dp</dimen>
+    <dimen name="camera_left">90dp</dimen>
+    <dimen name="camera_top">161dp</dimen>
+    <dimen name="filemanager_left">197dp</dimen>
+    <dimen name="filemanager_top">149dp</dimen>
+    <dimen name="bookshelf_light_left">85dp</dimen>
+    <dimen name="bookshelf_light_top">126dp</dimen>
+    <dimen name="qq_left">88dp</dimen>
+    <dimen name="qq_top">250dp</dimen>
+    <dimen name="calculator_left">205dp</dimen>
+    <dimen name="calculator_top">252dp</dimen>
+    <dimen name="setting_left">73dp</dimen>
+    <dimen name="setting_top">400dp</dimen>
+
+</resources>
