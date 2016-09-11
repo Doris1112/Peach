@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_imitationwechat_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/peachThemeColor"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dip"
+        android:background="@drawable/ic_wechat_title_bar"
+        android:gravity="center_vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/WeChat"
+            android:textColor="@android:color/white"
+            android:textSize="10pt" />
+
+        <ImageButton
+            android:layout_width="67dip"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dip"
+            android:background="@drawable/selector_wechat_title_button"
+            android:onClick="showPopupwindow"
+            android:src="@drawable/ic_wechat_title_btn_function" />
+    </RelativeLayout>
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#fcfcfc" />
+
+</LinearLayout>

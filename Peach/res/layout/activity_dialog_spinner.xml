@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/activity_paddingLeft"
+        android:layout_marginTop="50dip" >
+
+        <ListView
+            android:id="@+id/lv_dialog_spinner"
+            android:layout_width="150dip"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_dialog_bg"
+            android:divider="@null"
+            android:listSelector="@drawable/ic_listselector"
+            android:padding="10dip"
+            android:scrollbarThumbVertical="@drawable/ic_scrollbar" />
+    </RelativeLayout>
+
+</RelativeLayout>

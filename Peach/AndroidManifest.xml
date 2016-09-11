@@ -1,0 +1,764 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.doris.peach"
+    android:versionCode="1"
+    android:versionName="16.4.9.1" >
+
+    <!--
+     android:minSdkVersion="13" 字母索引列表背景错误，html页面可调用javascript
+     android:minSdkVersion="14"、"15" 字母索引列表背景无误，html页面可调用javascript
+     android:minSdkVersion="16" 字母索引列表背景无误，html页面不可调用javascript
+    -->
+    <uses-sdk android:minSdkVersion="16" />
+
+    <!-- 这个权限用于进行网络定位 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <!-- 这个权限用于访问GPS定位 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <!-- 用于访问wifi网络信息，wifi信息会用于进行网络定位 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!-- 获取运营商信息，用于支持提供运营商信息相关的接口 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- 这个权限用于获取wifi的获取权限，wifi信息会用来进行网络定位 -->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <!-- 用于读取手机当前的状态 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!-- 写入扩展存储，向扩展卡写入数据，用于写入离线定位数据 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- 访问网络，网络定位需要上网 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- SD卡读取权限，用户写入离线定位数据 -->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <!-- 下载通知 -->
+    <uses-permission android:name="android.permission.DOWNLOAD_WITHOUT_NOTIFICATION" />
+    <!-- 允许程序连接到已配对的蓝牙设备 -->
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <!-- 允许程序发现和配对蓝牙设备 -->
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+
+    <application
+        android:name=".application.PeachApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="dnId5U366P9dNGHhubGWhxCCkBnxX8YT" />
+        <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="8484344de0a8ea6c556c3be0efcba4c5" />
+
+        <activity
+            android:name=".StartActivity"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" >
+        </activity>
+        <activity
+            android:name=".ListActivity"
+            android:label="@string/list" >
+        </activity>
+        <activity
+            android:name=".ChineseSortActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".ToastActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".activity.win8.Win8ButtonActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".activity.win8.Win8ButtonActivity1"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".activity.win8.Win8ButtonActivity2"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".activity.tagcloud.TagCloudActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".activity.tagcloud.TagCloudActivity1"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".activity.tagcloud.TagCloudActivity2"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".SpinnerActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".ThreeDESActivity"
+            android:label="@string/app_name"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" >
+        </activity>
+        <activity
+            android:name=".AIDLActivity"
+            android:label="@string/app_name"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" >
+        </activity>
+        <activity
+            android:name=".activity.sensor.SensorActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".activity.sensor.AccelerometerActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".activity.sensor.OrientationActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".activity.dialog.DialogActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".activity.dialog.UseDialogActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".activity.dialog.UsePopupwindowActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".activity.dialog.UseActivityActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".activity.dialog.SweetAlertActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".activity.sensor.LightActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".activity.sensor.TumblerActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".activity.dialog.ImitationWeChatActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".activity.dialog.ImitationWeChatActivity2"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".activity.dialog.DialogImitationWeChatActivity2"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+        </activity>
+        <activity
+            android:name=".activity.dialog.DialogSpinnerActivity"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+        </activity>
+        <activity
+            android:name=".activity.gif.GIFActivity"
+            android:hardwareAccelerated="false"
+            android:label="@string/app_name" >
+        </activity>
+        <activity 
+            android:name=".activity.gif.GIFWebActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".EmojiconActivity"
+            android:label="@string/app_name"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" >
+        </activity>
+        <activity
+            android:name=".TelephoneInterceptActivity"
+            android:label="@string/app_name"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" >
+        </activity>
+        <activity
+            android:name=".activity.weather.WeatherActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".activity.weather.SelectCityActivity"
+            android:label="@string/app_name"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" >
+        </activity>
+        <activity
+            android:name=".activity.animation.AnimationActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".activity.animation.AnimationGameActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".activity.animation.Animation3DActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".activity.animation.AnimationNextActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".activity.animation.AnimationCommonActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".activity.animation.PageViewActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".activity.listview.ListViewActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".activity.listview.GoogleCardsActivity"
+            android:label="@string/googleCardsExample" >
+        </activity>
+        <activity
+            android:name=".activity.listview.SwingBottomInActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".activity.listview.SwingRightInActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".activity.listview.SwingLeftInActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".activity.listview.SwingBottomRightInActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".activity.listview.ScaleInActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".activity.listview.SwipeDismissActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".activity.listview.AnimateDismissActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".activity.listview.ContextualUndoActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".activity.searchforrelated.SearchForRelatedActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".activity.searchforrelated.FilmScreenActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".activity.pulltorefresh.PullToRefreshActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".activity.pulltorefresh.PullToRefreshListActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".activity.pulltorefresh.PullToRefreshExpandableListActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".activity.pulltorefresh.PullToRefreshGridActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".activity.pulltorefresh.PullToRefreshWebViewActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".activity.pulltorefresh.PullToRefreshScrollViewActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".activity.pulltorefresh.PullToRefreshHorizontalScrollViewActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".activity.pulltorefresh.PullToRefreshViewPagerActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".activity.pulltorefresh.PullToRefreshListFragmentActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".activity.pulltorefresh.PullToRefreshWebView2Activity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".activity.pulltorefresh.PullToRefreshListInViewPagerActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".LoadNetworkImageActivity"
+            android:label="@string/app_name"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" >
+        </activity>
+        <activity
+            android:name=".BaiduMapActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".activity.geomap.GaodeMapActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".activity.geomap.WalkRouteDetailActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".activity.geomap.BusRouteDetailActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".activity.geomap.DriveRouteDetailActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".activity.scrawl.ScrawlActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".activity.scrawl.Scrawl1Activity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".activity.scrawl.Scrawl2Activity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".activity.scrawl.SelectScrawlBgActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".activity.scrawl.ShowScrawlActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".activity.scrawl.ShowScrawlsActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".MoveZoomActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".activity.turn.TurnActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".activity.turn.TurnPicActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+        </activity>
+        <activity
+            android:name=".activity.turn.TurnPicVActivity"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+        </activity>
+        <activity
+            android:name=".activity.turn.TurnTxtActivity"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+        </activity>
+        <activity
+            android:name=".activity.loadingview.LoadingViewActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".activity.loadingview.LoadingViewActivity1"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".activity.loadingview.LoadingViewActivity2"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".activity.loadingview.LoadingViewPagerActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".activity.loadingview.LoadinViewGridActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".activity.loadingview.LoadingViewSystemActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".activity.loadingview.LoadingDrawableActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".activity.loadingview.BezierActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".activity.bluetooth.BluetoothActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".activity.bluetooth.BluetoothBaseActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".SwitchButtonActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".RippleTelActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".PickerViewActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".activity.notifications.NotificationsActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".activity.notifications.TestActivity"
+            android:exported="true"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".activity.notifications.AutoNotificationsActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".activity.notifications.PropressNotificationsActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".activity.textdrawable.TextDrawableActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".activity.textdrawable.ListTextDrawableActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".LauncherActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".activity.calendar.CalendarActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".activity.calendar.CalendarSelectActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".activity.calendar.LunarCalendarActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".activity.calendar.CollapseCalendarActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".TimeLineActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".activity.notebook.NoteBookActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".activity.notebook.AddNoteBookActivity"
+            android:label="@string/app_name"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan"  >
+        </activity>
+        <activity
+            android:name=".activity.note.NoteActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".activity.note.AddNoteActivity"
+            android:label="@string/app_name"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan"  >
+        </activity>
+        <activity
+            android:name=".activity.navigationpage.NavigationPageActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".activity.navigationpage.CopyGanjiActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".activity.navigationpage.ViewPagerActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".activity.navigationpage.GuidanceFragmentActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".activity.navigationpage.CopyMojiActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".activity.navigationpage.CopyWeChatActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".activity.navigationpage.GuideViewDoorActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".activity.navigationpage.CopyRenActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".activity.navigationpage.AutoViewFlowActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".activity.navigationpage.ViewFlipperActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".activity.navigationpage.SpringIndicatorActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".activity.navigationpage.ColorAnimationActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".activity.navigationpage.TitanicActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".activity.navigationpage.CopyQQActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".activity.navigationpage.CircleSignFragmentActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".activity.navigationpage.CircleSignEventsActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".activity.navigationpage.CircleSignSingleShotActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".activity.navigationpage.CircleSignAnimationsActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".activity.navigationpage.CircleSignCustomTextActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".activity.navigationpage.CircleSignCustomShowcaseActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".activity.navigationpage.CircleSignMemoryManagementActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".CopyChatPageActivity"
+            android:label="@string/app_name"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" >
+        </activity>
+        <activity
+            android:name=".activity.menu.AutoMenuActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".activity.menu.FloatingActionButtonActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".activity.menu.FloatingActionButtonActivity1"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".activity.menu.FragmentButtonActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".activity.menu.CustomAnimationActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".activity.menu.ScrollViewMenuActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".activity.menu.ResideMenuActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".activity.menu.SatelliteMenuActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".activity.threedimensionaloverturn.ThreeDimensionalOverturnActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".activity.threedimensionaloverturn.LoginActivity"
+            android:label="@string/app_name"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" >
+        </activity>
+        <activity
+            android:name=".activity.threedimensionaloverturn.SettingsActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".activity.threedimensionaloverturn.ImageActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".activity.discrollview.DiscrollViewActivity"
+            android:label="@string/app_name">
+        </activity>
+        <activity
+            android:name=".CircularProgressButtonActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".activity.notificationsdrag.NotificationsDragActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".activity.notificationsdrag.NotificationsDragActivity1"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".activity.notificationsdrag.NotificationsDragActivity2"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".activity.notificationsdrag.NotificationsDragListActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".PasswordInputActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".activity.login.LoginActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".activity.login.EffectActivity1"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".activity.paperfolding.PaperFoldingActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".activity.paperfolding.ModelView"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".FullTextActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".activity.lock.LockActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".activity.lock.NumberLockActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".activity.reader.ReaderActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".activity.reader.ReadCodeActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".activity.reader.ReadTextActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".activity.reader.ReadPDFActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".activity.step.StepActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".activity.step.FragmentStepActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".activity.step.HorizontalSlideActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".activity.card.CardActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".activity.card.UnfoldableDetailsActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".activity.card.EffectActivity"
+            android:label="@string/app_name" >
+        </activity>
+
+        <service android:name=".aidl.LoginService" >
+            <intent-filter>
+                <action android:name="com.doris.peach.aidl.Login" />
+            </intent-filter>
+        </service>
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote" >
+        </service>
+        <!-- 定位需要的服务 使用2.0的定位需要加上这个 -->
+        <service android:name="com.amap.api.location.APSService" >
+        </service>
+    </application>
+
+</manifest>

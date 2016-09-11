@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_filmscreen_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/peachThemeColor"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:background="#327DC8"
+        android:gravity="center_vertical"
+        android:padding="10dip"
+        android:text="@string/filmScreen"
+        android:textColor="@android:color/white"
+        android:textSize="8pt" />
+
+    <Button
+        android:id="@+id/b_film_screen"
+        style="@style/buttonWhiteFrame"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dip"
+        android:layout_marginTop="30dip"
+        android:onClick="filmScreen"
+        android:text="@string/screen" />
+
+    <GridView
+        android:id="@+id/gv_film_screen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/b_film_screen"
+        android:listSelector="@android:color/transparent"
+        android:numColumns="3"
+        android:padding="5dip"
+        android:scrollbarThumbVertical="@drawable/ic_scrollbar"
+        android:verticalSpacing="10dip" />
+
+</RelativeLayout>

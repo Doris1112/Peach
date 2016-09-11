@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_noteadd_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/peachThemeColor"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/rl_titlebg"
+        android:layout_width="match_parent"
+        android:layout_height="40dip"
+        android:background="@drawable/edit_title_blue"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/tv_modified_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/app_name"
+            android:textColor="@color/gray" />
+
+        <Button
+            android:id="@+id/b_saveNote"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:onClick="save"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="@string/save" />
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/et_note"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:autoLink="all"
+        android:inputType="none"
+        android:background="@drawable/edit_blue"
+        android:gravity="left|top"
+        android:lineSpacingMultiplier="1.2"
+        android:linksClickable="false"
+        android:minLines="12"
+        android:padding="@dimen/pickerview_topbar_paddingleft" />
+
+</LinearLayout>

@@ -1,0 +1,393 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/peachThemeColor"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/activity_paddingLeft"
+    android:paddingRight="@dimen/activity_paddingRight"
+    android:paddingBottom="@dimen/activity_paddingBottom"
+    android:paddingTop="@dimen/activity_paddingTop_statusBar" >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:text="@string/threedEffect"
+        android:textColor="@android:color/white" />
+
+    <com.doris.peachlibrary.view.threedimensionaloverturn.StereoView
+        android:id="@+id/stereoView1"
+        android:layout_width="300dp"
+        android:layout_height="60dp" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/white"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp" >
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:background="@drawable/icon_password"
+                tools:ignore="contentDescription" />
+
+            <com.doris.peachlibrary.view.threedimensionaloverturn.CustomEdittext
+                android:layout_width="180dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:background="@null"
+                android:hint="@string/zero"
+                android:inputType="textPassword"
+                android:textColorHint="@color/font_gray" />
+
+            <com.doris.peachlibrary.view.threedimensionaloverturn.RippleView
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:paddingLeft="10dp"
+                app:normal="@drawable/icon_next_gray"
+                app:pressed="@drawable/icon_next" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/white"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp" >
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:background="@drawable/icon_email"
+                tools:ignore="contentDescription" />
+
+            <com.doris.peachlibrary.view.threedimensionaloverturn.CustomEdittext
+                android:layout_width="180dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:background="@null"
+                android:hint="@string/one"
+                android:textColorHint="@color/font_gray" />
+
+            <com.doris.peachlibrary.view.threedimensionaloverturn.RippleView
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:paddingLeft="10dp"
+                app:normal="@drawable/icon_next_gray"
+                app:pressed="@drawable/icon_next" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/white"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp" >
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:background="@drawable/icon_user"
+                tools:ignore="contentDescription" />
+
+            <com.doris.peachlibrary.view.threedimensionaloverturn.CustomEdittext
+                android:layout_width="180dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:background="@null"
+                android:hint="@string/two"
+                android:textColorHint="@color/font_gray"
+                android:textSize="18sp" />
+
+            <com.doris.peachlibrary.view.threedimensionaloverturn.RippleView
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:paddingLeft="10dp"
+                app:normal="@drawable/icon_next_gray"
+                app:pressed="@drawable/icon_next" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/white"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp" >
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:background="@drawable/icon_love"
+                tools:ignore="contentDescription" />
+
+            <com.doris.peachlibrary.view.threedimensionaloverturn.CustomTextView
+                android:layout_width="180dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:background="@null"
+                android:gravity="center"
+                android:hint="@string/three"
+                android:textColorHint="@color/font_gray"
+                android:textSize="18sp" />
+
+            <com.doris.peachlibrary.view.threedimensionaloverturn.RippleView
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:paddingLeft="10dp"
+                app:normal="@drawable/icon_love" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/white"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp" >
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:background="@drawable/icon_love"
+                tools:ignore="contentDescription" />
+
+            <com.doris.peachlibrary.view.threedimensionaloverturn.CustomTextView
+                android:layout_width="180dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:background="@null"
+                android:gravity="center"
+                android:hint="@string/four"
+                android:textColorHint="@color/font_gray"
+                android:textSize="18sp" />
+
+            <com.doris.peachlibrary.view.threedimensionaloverturn.RippleView
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:paddingLeft="10dp"
+                app:normal="@drawable/icon_love" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/white"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp" >
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:background="@drawable/icon_love"
+                tools:ignore="contentDescription" />
+
+            <com.doris.peachlibrary.view.threedimensionaloverturn.CustomTextView
+                android:layout_width="180dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:background="@null"
+                android:gravity="center"
+                android:hint="@string/five"
+                android:textColorHint="@color/font_gray"
+                android:textSize="18sp" />
+
+            <com.doris.peachlibrary.view.threedimensionaloverturn.RippleView
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:paddingLeft="10dp"
+                app:normal="@drawable/icon_love" />
+        </LinearLayout>
+    </com.doris.peachlibrary.view.threedimensionaloverturn.StereoView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="@string/planceFlatEffect"
+        android:textColor="@android:color/white" />
+
+    <com.doris.peachlibrary.view.threedimensionaloverturn.StereoView
+        android:id="@+id/stereoView2"
+        android:layout_width="300dp"
+        android:layout_height="60dp" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/white"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp" >
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:background="@drawable/icon_password"
+                tools:ignore="contentDescription" />
+
+            <com.doris.peachlibrary.view.threedimensionaloverturn.CustomEdittext
+                android:layout_width="180dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:background="@null"
+                android:hint="@string/zero"
+                android:inputType="textPassword"
+                android:textColorHint="@color/font_gray" />
+
+            <com.doris.peachlibrary.view.threedimensionaloverturn.RippleView
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:paddingLeft="10dp"
+                app:normal="@drawable/icon_next_gray"
+                app:pressed="@drawable/icon_next" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/white"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp" >
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:background="@drawable/icon_email"
+                tools:ignore="contentDescription" />
+
+            <com.doris.peachlibrary.view.threedimensionaloverturn.CustomEdittext
+                android:layout_width="180dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:background="@null"
+                android:hint="@string/one"
+                android:textColorHint="@color/font_gray" />
+
+            <com.doris.peachlibrary.view.threedimensionaloverturn.RippleView
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:paddingLeft="10dp"
+                app:normal="@drawable/icon_next_gray"
+                app:pressed="@drawable/icon_next" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/white"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp" >
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:background="@drawable/icon_user"
+                tools:ignore="contentDescription" />
+
+            <com.doris.peachlibrary.view.threedimensionaloverturn.CustomEdittext
+                android:layout_width="180dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:background="@null"
+                android:hint="@string/two"
+                android:textColorHint="@color/font_gray"
+                android:textSize="18sp" />
+
+            <com.doris.peachlibrary.view.threedimensionaloverturn.RippleView
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:paddingLeft="10dp"
+                app:normal="@drawable/icon_next_gray"
+                app:pressed="@drawable/icon_next" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/white"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp" >
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:background="@drawable/icon_love"
+                tools:ignore="contentDescription" />
+
+            <com.doris.peachlibrary.view.threedimensionaloverturn.CustomTextView
+                android:layout_width="180dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:background="@null"
+                android:gravity="center"
+                android:hint="@string/three"
+                android:textColorHint="@color/font_gray"
+                android:textSize="18sp" />
+
+            <com.doris.peachlibrary.view.threedimensionaloverturn.RippleView
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:paddingLeft="10dp"
+                app:normal="@drawable/icon_love" />
+        </LinearLayout>
+    </com.doris.peachlibrary.view.threedimensionaloverturn.StereoView>
+
+    <TextView
+        android:id="@+id/tv_angle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="@string/settingthreedRotatePageAngle"
+        android:textColor="@android:color/white" />
+
+    <SeekBar
+        android:id="@+id/sb_angle"
+        style="@style/Widget.SeekBar.Normal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="180" />
+
+    <Button
+        android:id="@+id/btn_pre"
+        style="@style/buttonWhiteFrame"
+        android:layout_width="match_parent"
+        android:text="@string/previousPage" />
+
+    <Button
+        android:id="@+id/btn_next"
+        style="@style/buttonWhiteFrame"
+        android:layout_width="match_parent"
+        android:text="@string/next" />
+
+    <Button
+        android:id="@+id/btn_select"
+        style="@style/buttonWhiteFrame"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="20dip"
+        android:text="@string/goFourPage" />
+
+</LinearLayout>

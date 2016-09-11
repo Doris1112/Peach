@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_scrawl1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical" >
+    
+    <android.gesture.GestureOverlayView
+            android:id="@+id/gov_scrawl"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="5dip"
+            android:gestureColor="@android:color/black"
+            android:gestureStrokeType="multiple" />
+    
+    <Button 
+        android:id="@+id/b_scrawl1_clear"
+        style="@style/buttonBlackFrame"
+        android:onClick="manage"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="@dimen/activity_padding"
+        android:layout_marginBottom="@dimen/activity_padding"
+        android:text="@string/startagain"/>
+    
+    <Button 
+        android:id="@+id/b_scrawl1_save"
+        style="@style/buttonBlackFrame"
+        android:onClick="manage"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/activity_padding"
+        android:layout_marginBottom="@dimen/activity_padding"
+        android:text="@string/save"/>
+
+</RelativeLayout>

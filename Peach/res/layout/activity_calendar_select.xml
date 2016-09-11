@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_calendarselect_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/peachThemeColor"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/calendar_top_bg" >
+
+        <TextView
+            android:id="@+id/tv_calendarCenter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="8dp"
+            android:textColor="@android:color/white"
+            android:textSize="8pt"
+            android:textStyle="bold" />
+
+        <ImageButton
+            android:id="@+id/ib_calendarLeft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:background="@null"
+            android:contentDescription="@null"
+            android:padding="8dp"
+            android:onClick="doCalendar"
+            android:src="@drawable/calendar_month_left" />
+
+        <ImageButton
+            android:id="@+id/ib_calendarRight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@null"
+            android:contentDescription="@null"
+            android:padding="8dp"
+            android:onClick="doCalendar"
+            android:src="@drawable/calendar_month_right" />
+
+        <com.doris.peachlibrary.view.calendar.CalendarView
+            android:id="@+id/cv_calendar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/tv_calendarCenter" />
+    </RelativeLayout>
+    
+    <!-- android:layout_margin="@dimen/activity_padding" -->
+    <CheckBox 
+        android:id="@+id/cb_selectMore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        
+        android:textColor="@android:color/white"
+        android:textSize="8pt"
+        android:text="@string/selectMore" />
+
+</LinearLayout>

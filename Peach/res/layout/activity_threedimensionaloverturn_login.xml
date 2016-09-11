@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/peachThemeColor"
+    android:paddingLeft="@dimen/activity_paddingLeft"
+    android:paddingRight="@dimen/activity_paddingRight"
+    android:paddingBottom="@dimen/activity_paddingBottom"
+    android:paddingTop="@dimen/activity_paddingTop">
+
+    <com.doris.peachlibrary.view.threedimensionaloverturn.StereoView
+        android:id="@+id/stereoView"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_centerInParent="true" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/white"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp" >
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:background="@drawable/icon_password"
+                tools:ignore="contentDescription" />
+
+            <com.doris.peachlibrary.view.threedimensionaloverturn.CustomEdittext
+                android:id="@+id/et_password"
+                android:layout_width="180dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:background="@null"
+                android:hint="@string/Password"
+                android:inputType="textPassword"
+                android:textColorHint="@color/font_gray" />
+
+            <com.doris.peachlibrary.view.threedimensionaloverturn.RippleView
+                android:id="@+id/rv_password"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:paddingLeft="10dp"
+                app:normal="@drawable/icon_next_gray"
+                app:pressed="@drawable/icon_next" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/white"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp" >
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:background="@drawable/icon_email"
+                tools:ignore="contentDescription" />
+
+            <com.doris.peachlibrary.view.threedimensionaloverturn.CustomEdittext
+                android:id="@+id/et_email"
+                android:layout_width="180dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:background="@null"
+                android:hint="@string/Email_"
+                android:singleLine="true"
+                android:textColorHint="@color/font_gray" />
+
+            <com.doris.peachlibrary.view.threedimensionaloverturn.RippleView
+                android:id="@+id/rv_email"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:paddingLeft="10dp"
+                app:normal="@drawable/icon_next_gray"
+                app:pressed="@drawable/icon_next" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/white"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp" >
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:background="@drawable/icon_user"
+                tools:ignore="contentDescription" />
+
+            <com.doris.peachlibrary.view.threedimensionaloverturn.CustomEdittext
+                android:id="@+id/et_username"
+                android:layout_width="180dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:background="@null"
+                android:hint="@string/UserName"
+                android:singleLine="true"
+                android:textColorHint="@color/font_gray"
+                android:textSize="18sp" />
+
+            <com.doris.peachlibrary.view.threedimensionaloverturn.RippleView
+                android:id="@+id/rv_username"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:paddingLeft="10dp"
+                app:normal="@drawable/icon_next_gray"
+                app:pressed="@drawable/icon_next" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/white"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp" >
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:background="@drawable/icon_love"
+                tools:ignore="contentDescription" />
+
+            <com.doris.peachlibrary.view.threedimensionaloverturn.CustomTextView
+                android:id="@+id/tv_welcome"
+                android:layout_width="180dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:background="@null"
+                android:gravity="center"
+                android:hint="@string/youAreWelcome"
+                android:singleLine="true"
+                android:textColorHint="@color/font_gray"
+                android:textSize="18sp" />
+
+            <com.doris.peachlibrary.view.threedimensionaloverturn.RippleView
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:paddingLeft="10dp"
+                app:normal="@drawable/icon_love" />
+        </LinearLayout>
+    </com.doris.peachlibrary.view.threedimensionaloverturn.StereoView>
+
+</RelativeLayout>

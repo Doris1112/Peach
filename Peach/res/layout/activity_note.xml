@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/peachThemeColor"
+    android:paddingTop="@dimen/activity_paddingTop"
+    android:orientation="vertical" >
+
+    <ListView
+        android:id="@+id/lv_notes"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/activity_padding"
+        android:divider="@null"
+        android:listSelector="@android:color/transparent"
+        android:scrollbarThumbVertical="@drawable/ic_scrollbar" />
+
+    <Button
+        android:id="@+id/b_addNote"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:onClick="addNote"
+        android:background="@drawable/new_note" />
+    
+    <ImageButton 
+	    android:id="@+id/ib_delete"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_marginBottom="@dimen/activity_padding"
+	    android:layout_centerHorizontal="true"
+	    android:layout_alignParentBottom="true"
+	    android:onClick="delete"
+	    android:background="@drawable/selector_delete" />
+
+</RelativeLayout>

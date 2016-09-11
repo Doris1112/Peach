@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/sv_loadingvewdrawable"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/peachThemeColor"
+    android:scrollbarThumbVertical="@drawable/ic_scrollbar" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <com.doris.peachlibrary.view.loadingview.LoadingView
+            android:layout_width="match_parent"
+            android:layout_height="307dip"
+            android:background="#ffd4d9da"
+            app:loading_renderer="CircleBroodLoadingRenderer" />
+
+        <com.doris.peachlibrary.view.loadingview.LoadingView
+            android:layout_width="match_parent"
+            android:layout_height="308dip"
+            android:background="#ff1B78DD"
+            app:loading_renderer="CoolWaitLoadingRenderer" />
+
+        <com.doris.peachlibrary.view.loadingview.LoadingView
+            android:layout_width="match_parent"
+            android:layout_height="308dip"
+            android:background="#ffd4d9da"
+            app:loading_renderer="BalloonLoadingRenderer" />
+
+        <com.doris.peachlibrary.view.loadingview.LoadingView
+            android:layout_width="match_parent"
+            android:layout_height="308dip"
+            android:background="#ff15181d"
+            app:loading_renderer="WaterBottleLoadingRenderer" />
+
+        <com.doris.peachlibrary.view.loadingview.LoadingView
+            android:layout_width="match_parent"
+            android:layout_height="308dip"
+            android:background="#fffcd03c"
+            app:loading_renderer="ElectricFanLoadingRenderer" />
+
+        <com.doris.peachlibrary.view.loadingview.LoadingView
+            android:layout_width="match_parent"
+            android:layout_height="308dip"
+            android:background="#ff071c28"
+            app:loading_renderer="DayNightLoadingRenderer" />
+
+        <com.doris.peachlibrary.view.loadingview.LoadingView
+            android:layout_width="match_parent"
+            android:layout_height="308dip"
+            android:background="#ffcdcdcd"
+            app:loading_renderer="GhostsEyeLoadingRenderer" />
+
+        <com.doris.peachlibrary.view.loadingview.LoadingView
+            android:layout_width="match_parent"
+            android:layout_height="308dip"
+            android:background="#ff071c28"
+            app:loading_renderer="FishLoadingRenderer" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="308dip"
+            android:orientation="horizontal" >
+
+            <com.doris.peachlibrary.view.loadingview.LoadingView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#ffe6ebed"
+                app:loading_renderer="WhorlLoadingRenderer" />
+
+            <com.doris.peachlibrary.view.loadingview.LoadingView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#ff2a8cc8"
+                app:loading_renderer="MaterialLoadingRenderer" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="308dip"
+            android:orientation="horizontal" >
+
+            <com.doris.peachlibrary.view.loadingview.LoadingView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#fffa644e"
+                app:loading_renderer="GearLoadingRenderer" />
+
+            <com.doris.peachlibrary.view.loadingview.LoadingView
+                android:id="@+id/level_view"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#fff1c02e"
+                app:loading_renderer="LevelLoadingRenderer" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="308dip"
+            android:orientation="horizontal" >
+
+            <com.doris.peachlibrary.view.loadingview.LoadingView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#ffe9e4d1"
+                app:loading_renderer="CollisionLoadingRenderer" />
+
+            <com.doris.peachlibrary.view.loadingview.LoadingView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#ff9c0000"
+                app:loading_renderer="SwapLoadingRenderer" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="308dip"
+            android:orientation="horizontal" >
+
+            <com.doris.peachlibrary.view.loadingview.LoadingView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#ff000000"
+                app:loading_renderer="GuardLoadingRenderer" />
+
+            <com.doris.peachlibrary.view.loadingview.LoadingView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#ff94d0c1"
+                app:loading_renderer="DanceLoadingRenderer" />
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

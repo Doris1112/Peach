@@ -1,0 +1,35 @@
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/peachThemeColor"
+    android:paddingLeft="@dimen/activity_paddingLeft"
+    android:paddingRight="@dimen/activity_paddingRight"
+    android:paddingBottom="@dimen/activity_paddingBottom"
+    android:paddingTop="@dimen/activity_paddingTop" >
+
+    <com.doris.peachlibrary.view.Win8Button1
+        android:id="@+id/win8btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="26dp"
+        android:layout_y="378dp"
+        android:scaleType="matrix"
+        android:src="@drawable/xuanzhuanqu" />
+
+    <Button
+        android:id="@+id/b_car"
+        android:layout_width="253dp"
+        android:layout_height="210dp"
+        android:layout_x="34dp"
+        android:layout_y="54dp"
+        android:background="@drawable/aodi0000" />
+
+    <Button
+        android:layout_width="400dp"
+        android:layout_height="274dp"
+        android:layout_x="-43dp"
+        android:layout_y="19dp"
+        android:background="@drawable/dianshi" />
+
+</AbsoluteLayout>

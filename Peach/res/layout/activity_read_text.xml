@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/peachThemeColor"
+    android:paddingLeft="@dimen/activity_paddingLeft"
+    android:paddingRight="@dimen/activity_paddingRight"
+    android:paddingBottom="@dimen/activity_paddingBottom"
+    android:paddingTop="@dimen/activity_paddingTop_statusBar"
+    android:scrollbarThumbVertical="@drawable/ic_scrollbar"
+    android:scrollbars="vertical" >
+
+    <TextView
+        android:id="@+id/tv_read_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:textSize="8pt"
+        android:text="@string/app_name" />
+
+</ScrollView>

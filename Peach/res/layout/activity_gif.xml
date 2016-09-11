@@ -1,0 +1,40 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:customgif="http://schemas.android.com/apk/res/com.doris.peach"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/tv_activity_title"
+        style="@style/titlePeach" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/peachThemeColor"
+        android:paddingTop="@dimen/activity_paddingTop"
+        android:paddingLeft="@dimen/activity_paddingLeft"
+        android:paddingRight="@dimen/activity_paddingRight"
+        android:paddingBottom="@dimen/activity_paddingBottom"
+        android:orientation="vertical" >
+
+        <Button
+            style="@style/buttonWhiteFrame"
+            android:onClick="openTheGIFImages"
+            android:text="@string/openTheGIFImages" />
+
+        <com.doris.peachlibrary.view.GIFView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dip"
+            customgif:gif="@drawable/ic_gif_image1" />
+
+        <LinearLayout
+            android:id="@+id/ll_gif"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dip"
+            android:orientation="vertical" />
+    </LinearLayout>
+
+</LinearLayout>

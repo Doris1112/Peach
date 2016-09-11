@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_paddingLeft"
+    android:paddingRight="@dimen/activity_paddingRight"
+    android:paddingBottom="@dimen/activity_paddingBottom"
+    android:paddingTop="@dimen/activity_paddingTop_statusBar"
+    android:background="@color/peachThemeColor"
+    android:scrollbarThumbVertical="@drawable/ic_scrollbar" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingBottom="10dp" >
+
+        <TextView
+            style="@style/text8ptWhite"
+            android:text="@string/showMaterialProgress" />
+
+        <Button
+            android:id="@+id/progress_dialog"
+            style="@style/buttonWhiteFrame"
+            android:layout_margin="10dp"
+            android:onClick="showDialog"
+            android:text="@string/TryMe" />
+
+        <TextView
+            style="@style/text8ptWhite"
+            android:text="@string/ABasicMessage" />
+
+        <Button
+            android:id="@+id/basic_test"
+            style="@style/buttonWhiteFrame"
+            android:layout_margin="10dp"
+            android:onClick="showDialog"
+            android:text="@string/TryMe" />
+
+        <TextView
+            style="@style/text8ptWhite"
+            android:text="@string/ATitleWithATextUnder" />
+
+        <Button
+            android:id="@+id/under_text_test"
+            style="@style/buttonWhiteFrame"
+            android:layout_margin="10dp"
+            android:onClick="showDialog"
+            android:text="@string/TryMe" />
+
+        <TextView
+            style="@style/text8ptWhite"
+            android:text="@string/showErrorMessage" />
+
+        <Button
+            android:id="@+id/error_text_test"
+            style="@style/buttonWhiteFrame"
+            android:layout_margin="10dp"
+            android:onClick="showDialog"
+            android:text="@string/TryMe" />
+
+        <TextView
+            style="@style/text8ptWhite"
+            android:text="@string/ASuccessMessage" />
+
+        <Button
+            android:id="@+id/success_text_test"
+            style="@style/buttonWhiteFrame"
+            android:layout_margin="10dp"
+            android:onClick="showDialog"
+            android:text="@string/TryMe" />
+
+        <TextView
+            style="@style/text8ptWhite"
+            android:text="@string/AWarningMessage_withAListener" />
+
+        <Button
+            android:id="@+id/warning_confirm_test"
+            style="@style/buttonWhiteFrame"
+            android:layout_margin="10dp"
+            android:onClick="showDialog"
+            android:text="@string/TryMe" />
+
+        <TextView
+            style="@style/text8ptWhite"
+            android:text="@string/AWarningMessage_withACancelListener" />
+
+        <Button
+            android:id="@+id/warning_cancel_test"
+            style="@style/buttonWhiteFrame"
+            android:layout_margin="10dp"
+            android:onClick="showDialog"
+            android:text="@string/TryMe" />
+
+        <TextView
+            style="@style/text8ptWhite"
+            android:text="@string/AMessageWithACustomIcon" />
+
+        <Button
+            android:id="@+id/custom_img_test"
+            style="@style/buttonWhiteFrame"
+            android:layout_margin="10dp"
+            android:onClick="showDialog"
+            android:text="@string/TryMe" />
+    </LinearLayout>
+
+</ScrollView>

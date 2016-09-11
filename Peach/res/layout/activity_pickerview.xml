@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/peachThemeColor" >
+
+    <TextView
+        android:id="@+id/tvTime"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="50dp"
+        android:text="@string/time"
+        android:textColor="@android:color/white"
+        android:textSize="10pt" />
+
+    <TextView
+        android:id="@+id/tvOptions"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/tvTime"
+        android:layout_margin="50dp"
+        android:text="@string/condition"
+        android:textColor="@android:color/white"
+        android:textSize="10pt" />
+
+    <View
+        android:id="@+id/vMasker"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#e0000000"
+        android:visibility="gone" />
+
+</RelativeLayout>

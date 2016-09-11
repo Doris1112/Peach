@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/peachThemeColor"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/activity_paddingLeft"
+    android:paddingRight="@dimen/activity_paddingRight"
+    android:paddingBottom="@dimen/activity_paddingBottom"
+    android:paddingTop="@dimen/activity_paddingTop_statusBar" >
+
+    <Button
+        android:id="@+id/b_showProgress"
+        style="@style/buttonWhiteFrame"
+        android:onClick="doNotifications"
+        android:text="@string/showPropressNotifications" />
+
+    <Button
+        android:id="@+id/b_showWaitProgress"
+        style="@style/buttonWhiteFrame"
+        android:onClick="doNotifications"
+        android:text="@string/showPropressWaitNotifications" />
+
+    <Button
+        android:id="@+id/b_showAutoProgress"
+        style="@style/buttonWhiteFrame"
+        android:onClick="doNotifications"
+        android:text="@string/showAutoPropressNotifications" />
+
+    <Button
+        android:id="@+id/b_downloadStart"
+        style="@style/buttonWhiteFrame"
+        android:layout_marginTop="20dip"
+        android:onClick="doNotifications"
+        android:text="@string/startDownload" />
+
+    <Button
+        android:id="@+id/b_downloadPause"
+        style="@style/buttonWhiteFrame"
+        android:onClick="doNotifications"
+        android:text="@string/pauseDownload" />
+
+    <Button
+        android:id="@+id/b_downloadCancel"
+        style="@style/buttonWhiteFrame"
+        android:onClick="doNotifications"
+        android:text="@string/cancelDownload" />
+
+</LinearLayout>

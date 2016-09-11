@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <dimen name="activity_paddingLeft">16dp</dimen>
+    <dimen name="activity_paddingRight">16dp</dimen>
+    <dimen name="activity_paddingTop">16dp</dimen>
+    <dimen name="activity_paddingTop_statusBar">40dp</dimen>
+    <dimen name="activity_paddingBottom">16dp</dimen>
+    
+</resources>

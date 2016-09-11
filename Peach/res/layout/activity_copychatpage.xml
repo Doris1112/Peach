@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/peachThemeColor" >
+
+    <RelativeLayout
+        android:id="@+id/ll_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/activity_paddingBottom"
+        android:padding="5dip" >
+
+        <Button
+            android:id="@+id/b_send"
+            android:layout_width="wrap_content"
+            android:layout_height="40dip"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dip"
+            android:background="@drawable/selector_btn_white_frame"
+            android:text="@string/send"
+            android:textColor="@android:color/white"
+            android:textSize="8pt" />
+
+        <EditText
+            android:id="@+id/et_sendMassge"
+            android:layout_width="match_parent"
+            android:layout_height="40dip"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/b_send"
+            android:background="@drawable/shape_dialog_bg"
+            android:hint="@string/inputMassge"
+            android:padding="5dip"
+            android:textColor="@android:color/black"
+            android:textSize="8pt" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/lv_chat"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/ll_input"
+        android:divider="@null"
+        android:listSelector="@android:color/transparent"
+        android:paddingTop="@dimen/activity_paddingTop_statusBar"
+        android:paddingLeft="@dimen/activity_paddingLeft"
+        android:paddingRight="@dimen/activity_paddingRight"
+        android:paddingBottom="@dimen/activity_paddingBottom"
+        android:scrollbarThumbVertical="@android:color/transparent" />
+
+</RelativeLayout>

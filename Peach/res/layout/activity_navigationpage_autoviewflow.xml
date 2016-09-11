@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.doris.peach"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <FrameLayout
+        android:id="@+id/framelayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff" >
+
+        <com.doris.peachlibrary.view.ViewFlow
+            android:id="@+id/viewflow"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+        </com.doris.peachlibrary.view.ViewFlow>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:background="#00252525"
+            android:gravity="center"
+            android:padding="3dip" >
+
+            <com.doris.peachlibrary.view.CircleFlowIndicator
+                android:id="@+id/viewflowindic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|bottom"
+                android:padding="2dip"
+                app:activeColor="@color/peachThemeColor"
+                app:activeType="fill"
+                app:circleSeparation="20dip"
+                app:inactiveColor="@android:color/white"
+                app:inactiveType="fill"
+                app:radius="8dip" />
+        </LinearLayout>
+    </FrameLayout>
+
+</LinearLayout>

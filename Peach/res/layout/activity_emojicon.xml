@@ -1,0 +1,35 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:emojicon="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/peachThemeColor"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:paddingLeft="@dimen/activity_paddingLeft"
+    android:paddingRight="@dimen/activity_paddingRight"
+    android:paddingBottom="@dimen/activity_paddingBottom"
+    android:paddingTop="@dimen/activity_paddingTop" >
+
+    <com.rockerhieu.emojicon.EmojiconTextView
+        android:id="@+id/etv_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dip"
+        android:text="@string/app_name"
+        android:textColor="@android:color/white"
+        android:textSize="10pt" />
+
+    <com.rockerhieu.emojicon.EmojiconEditText
+        android:id="@+id/eet_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/emojiconHint"
+        emojicon:emojiconSize="15pt" />
+
+    <fragment
+        android:id="@+id/f_emojicons"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        class="com.rockerhieu.emojicon.EmojiconsFragment" />
+
+</LinearLayout>

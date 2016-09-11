@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <com.baidu.mapapi.map.MapView
+        android:id="@+id/mv_baidumaps"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true" />
+
+    <LinearLayout
+        android:id="@+id/ll_baidumaps_search"
+        android:layout_width="wrap_content"
+        android:layout_height="40dip"
+        android:layout_marginLeft="10dip"
+        android:layout_marginTop="@dimen/activity_paddingTop_statusBar"
+        android:background="@android:color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <EditText
+            android:id="@+id/et_baidimaps_search"
+            android:layout_width="230dip"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent"
+            android:hint="@string/siteBusLines"
+            android:padding="5dip"
+            android:singleLine="true" />
+
+        <View
+            android:layout_width="1dip"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="5dip"
+            android:layout_marginTop="5dip"
+            android:background="#EEEEEE" />
+
+        <ImageView
+            android:layout_width="40dip"
+            android:layout_height="match_parent"
+            android:contentDescription="@string/app_name"
+            android:onClick="baidumapPath"
+            android:scaleType="center"
+            android:src="@drawable/baidumap_path" />
+
+        <ImageView
+            android:layout_width="40dip"
+            android:layout_height="match_parent"
+            android:background="#3385FF"
+            android:contentDescription="@string/app_name"
+            android:onClick="search"
+            android:scaleType="center"
+            android:src="@drawable/baidumap_search" />
+    </LinearLayout>
+
+    <RadioGroup
+        android:id="@+id/rg_baidumaps"
+        android:layout_width="230dip"
+        android:layout_height="40dip"
+        android:layout_marginLeft="10dip"
+        android:layout_marginTop="@dimen/activity_paddingTop_statusBar"
+        android:background="@android:color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="5dip"
+        android:visibility="gone" >
+
+        <RadioButton
+            android:id="@+id/rb_baidumaps_bus"
+            android:layout_width="0dip"
+            android:layout_height="40dip"
+            android:layout_weight="1"
+            android:button="@drawable/baidumap_bus_selector"
+            android:checked="true"
+            android:text="@string/bus"
+            android:textColor="@android:color/black" />
+
+        <RadioButton
+            android:id="@+id/rb_baidumaps_drive"
+            android:layout_width="0dip"
+            android:layout_height="40dip"
+            android:layout_weight="1"
+            android:button="@drawable/baidumap_drive_selector"
+            android:text="@string/driving"
+            android:textColor="@android:color/black" />
+
+        <RadioButton
+            android:id="@+id/rb_baidumaps_walk"
+            android:layout_width="0dip"
+            android:layout_height="40dip"
+            android:layout_weight="1"
+            android:button="@drawable/baidumap_walk_selector"
+            android:text="@string/walk"
+            android:textColor="@android:color/black" />
+
+        <RadioButton
+            android:id="@+id/rb_baidumaps_cycling"
+            android:layout_width="0dip"
+            android:layout_height="40dip"
+            android:layout_weight="1"
+            android:button="@drawable/baidumap_cycling_selector"
+            android:text="@string/cycling"
+            android:textColor="@android:color/black" />
+    </RadioGroup>
+
+    <ListView
+        android:id="@+id/lv_baidumaps"
+        android:layout_width="271dip"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ll_baidumaps_search"
+        android:layout_marginLeft="10dip"
+        android:background="@android:color/white"
+        android:divider="@null"
+        android:scrollbarThumbVertical="@drawable/ic_scrollbar"
+        android:visibility="gone"
+        android:listSelector="@android:color/transparent" />
+
+    <LinearLayout
+        android:id="@+id/ll_baidumaps_path"
+        android:layout_width="271dip"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ll_baidumaps_search"
+        android:layout_marginLeft="10dip"
+        android:background="@android:color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <ImageView
+            android:layout_width="40dip"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/app_name"
+            android:scaleType="center"
+            android:src="@drawable/baidumap_way" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <EditText
+                android:id="@+id/et_baidumaps_origin"
+                android:layout_width="match_parent"
+                android:layout_height="40dip"
+                android:background="@android:color/transparent"
+                android:drawableLeft="@drawable/baidumap_origin"
+                android:hint="@string/origin"
+                android:singleLine="true" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dip"
+                android:layout_marginRight="5dip"
+                android:background="#EEEEEE" />
+
+            <EditText
+                android:id="@+id/et_baidumaps_end"
+                android:layout_width="match_parent"
+                android:layout_height="40dip"
+                android:background="@android:color/transparent"
+                android:drawableLeft="@drawable/baidumap_end"
+                android:hint="@string/end"
+                android:imeOptions="actionSearch"
+                android:singleLine="true" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dip"
+        android:background="@android:color/white"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="5dip" >
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="30dip"
+            android:button="@drawable/baidumap_road_condition_selector"
+            android:onClick="roadCondition"
+            android:text="@string/road_condition"
+            android:textColor="@android:color/background_dark" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dip"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/b_baidumaps_pre"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="2dip"
+            android:layout_marginRight="2dip"
+            android:layout_weight="1.0"
+            android:background="@drawable/baidumap_pre_selector"
+            android:onClick="nodeClick" />
+
+        <Button
+            android:id="@+id/b_baidumaps_next"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="2dip"
+            android:layout_marginRight="2dip"
+            android:layout_weight="1.0"
+            android:background="@drawable/baidumap_next_selector"
+            android:onClick="nodeClick" />
+    </LinearLayout>
+
+</RelativeLayout>

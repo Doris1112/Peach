@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/peachThemeColor"
+    android:gravity="center"
+    android:paddingLeft="@dimen/activity_paddingLeft"
+    android:paddingRight="@dimen/activity_paddingRight"
+    android:paddingBottom="@dimen/activity_paddingBottom"
+    android:paddingTop="@dimen/activity_paddingTop_statusBar" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/ll_win8btn_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <com.doris.peachlibrary.view.Win8Button1
+                android:id="@+id/win8_01"
+                android:layout_width="108dp"
+                android:layout_height="108dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_win8_5" />
+            
+            <com.doris.peachlibrary.view.Win8Button1
+                android:id="@+id/win8_btn"
+                android:layout_width="108dp"    
+				android:layout_height="108dp"   
+				android:visibility="gone"
+				android:scaleType="fitXY" />
+
+            <com.doris.peachlibrary.view.Win8Button1
+                android:id="@+id/win8_02"
+                android:layout_width="108dp"
+                android:layout_height="108dp"
+                android:layout_marginLeft="5dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_win8_5" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal" >
+
+            <com.doris.peachlibrary.view.Win8Button1
+                android:id="@+id/win8_03"
+                android:layout_width="108dp"
+                android:layout_height="108dp"
+                android:scaleType="matrix"
+                android:src="@drawable/ic_win8_6" />
+
+            <com.doris.peachlibrary.view.Win8Button1
+                android:id="@+id/win8_04"
+                android:layout_width="108dp"
+                android:layout_height="108dp"
+                android:layout_marginLeft="5dp"
+                android:scaleType="matrix"
+                android:src="@drawable/ic_win8_6" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal" >
+
+            <com.doris.peachlibrary.view.Win8Button1
+                android:id="@+id/win8_05"
+                android:layout_width="108dp"
+                android:layout_height="108dp"
+                android:scaleType="matrix"
+                android:src="@drawable/ic_win8_6" />
+
+            <com.doris.peachlibrary.view.Win8Button1
+                android:id="@+id/win8_06"
+                android:layout_width="108dp"
+                android:layout_height="108dp"
+                android:layout_marginLeft="5dp"
+                android:scaleType="matrix"
+                android:src="@drawable/ic_win8_6" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal" >
+
+            <com.doris.peachlibrary.view.Win8Button1
+                android:id="@+id/win8_07"
+                android:layout_width="108dp"
+                android:layout_height="108dp"
+                android:scaleType="matrix"
+                android:src="@drawable/ic_win8_6" />
+
+            <com.doris.peachlibrary.view.Win8Button1
+                android:id="@+id/win8_08"
+                android:layout_width="108dp"
+                android:layout_height="108dp"
+                android:layout_marginLeft="5dp"
+                android:scaleType="matrix"
+                android:src="@drawable/ic_win8_6" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

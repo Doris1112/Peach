@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.doris.peachlibrary.view.card.CardStackView
+    android:id="@+id/stackview_main"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/peachThemeColor"
+    android:clipToPadding="false"
+    android:paddingLeft="@dimen/activity_paddingLeft"
+    android:paddingRight="@dimen/activity_paddingRight"
+    android:paddingTop="@dimen/activity_paddingTop_statusBar"/>

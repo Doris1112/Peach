@@ -1,0 +1,67 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/peachThemeColor"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/activity_paddingLeft"
+    android:paddingRight="@dimen/activity_paddingRight"
+    android:paddingBottom="@dimen/activity_paddingBottom"
+    android:paddingTop="@dimen/activity_paddingTop_statusBar" >
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@drawable/shape_whiteframe_normal"
+        android:padding="0dp"
+        android:layout_height="40dip" >
+
+        <Button
+            android:id="@+id/b_search"
+            android:layout_width="90dip"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:background="@android:color/transparent"
+            android:textColor="@android:color/white"
+            android:gravity="center"
+            android:onClick="search"
+            android:text="@string/search" />
+
+        <EditText
+            android:id="@+id/et_search_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/activity_padding"
+            android:layout_toLeftOf="@id/b_search"
+            android:background="@android:color/transparent"
+            android:textColor="@android:color/white"
+            android:maxLength="50"
+            android:singleLine="true" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/lv_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_dialog_bg"
+        android:listSelector="@drawable/selector_listselect"
+        android:divider="@null"
+        android:padding="10dip"
+        android:visibility="gone"
+        android:scrollbarThumbVertical="@drawable/ic_scrollbar" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dip"
+        android:layout_marginTop="10dip" >
+
+        <Button
+            android:layout_width="90dip"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/selector_btn_white_frame"
+            android:textColor="@android:color/white"
+            android:gravity="center"
+            android:onClick="list"
+            android:text="@string/list" />
+    </RelativeLayout>
+
+</LinearLayout>

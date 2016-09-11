@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/tv_activity_title"
+        style="@style/titlePeach" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/peachThemeColor"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/activity_paddingBottom"
+        android:paddingLeft="@dimen/activity_paddingLeft"
+        android:paddingRight="@dimen/activity_paddingRight"
+        android:paddingTop="@dimen/activity_paddingTop" >
+
+        <TextView
+            android:id="@+id/tv_notebook_hint"
+            style="@style/text10ptWhite"
+            android:layout_centerInParent="true"
+            android:text="@string/notebookhint" />
+
+        <ListView
+            android:id="@+id/lv_notebooks"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="@null"
+            android:listSelector="@android:color/transparent"
+            android:scrollbarThumbVertical="@drawable/ic_scrollbar" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/b_add"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dip"
+                android:background="@drawable/selector_add"
+                android:onClick="doNotebook" />
+
+            <Button
+                android:id="@+id/b_delete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/selector_delete"
+                android:onClick="doNotebook" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

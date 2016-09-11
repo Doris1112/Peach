@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/tv_activity_title"
+        style="@style/titlePeach" />
+
+    <ScrollView style="@style/contentPeach"
+        android:background="@android:color/white" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dip"
+                android:text="@string/indeterminateProgressSample"
+                android:textColor="@color/gray" />
+
+            <com.doris.peachlibrary.view.circularprogressbutton.CircularProgressButton
+                android:id="@+id/circularButton1"
+                android:layout_width="196dp"
+                android:layout_height="64dp"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                app:cpb_cornerRadius="48dp"
+                app:cpb_iconComplete="@drawable/ic_action_accept"
+                app:cpb_iconError="@drawable/ic_action_cancel"
+                app:cpb_textIdle="@string/Upload" />
+
+            <com.doris.peachlibrary.view.circularprogressbutton.CircularProgressButton
+                android:id="@+id/circularButton2"
+                android:layout_width="196dp"
+                android:layout_height="64dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="16dp"
+                android:layout_marginTop="16dp"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                app:cpb_cornerRadius="48dp"
+                app:cpb_iconComplete="@drawable/ic_action_accept"
+                app:cpb_iconError="@drawable/ic_action_cancel"
+                app:cpb_textIdle="@string/Upload" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dip"
+                android:text="@string/integerProgressSample"
+                android:textColor="@color/gray" />
+
+            <com.doris.peachlibrary.view.circularprogressbutton.CircularProgressButton
+                android:id="@+id/circularButton3"
+                android:layout_width="196dp"
+                android:layout_height="64dp"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                app:cpb_textComplete="@string/Complete"
+                app:cpb_textError="@string/Error"
+                app:cpb_textIdle="@string/Upload" />
+
+            <com.doris.peachlibrary.view.circularprogressbutton.CircularProgressButton
+                android:id="@+id/circularButton4"
+                android:layout_width="196dp"
+                android:layout_height="64dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="16dp"
+                android:layout_marginTop="16dp"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                app:cpb_textComplete="@string/Complete"
+                app:cpb_textError="@string/Error"
+                app:cpb_textIdle="@string/Upload" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dip"
+                android:text="@string/stateChangeSample"
+                android:textColor="@color/gray" />
+
+            <com.doris.peachlibrary.view.circularprogressbutton.CircularProgressButton
+                android:id="@+id/circularButton5"
+                android:layout_width="196dp"
+                android:layout_height="64dp"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                app:cpb_textComplete="@string/Complete"
+                app:cpb_textError="@string/Error"
+                app:cpb_textIdle="@string/Upload" />
+
+            <com.doris.peachlibrary.view.circularprogressbutton.CircularProgressButton
+                android:id="@+id/circularButton6"
+                android:layout_width="196dp"
+                android:layout_height="64dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="16dp"
+                android:layout_marginTop="16dp"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                app:cpb_textComplete="@string/Complete"
+                app:cpb_textError="@string/Error"
+                app:cpb_textIdle="@string/Upload" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dip"
+                android:text="@string/progressPaddingSample"
+                android:textColor="@color/gray" />
+
+            <com.doris.peachlibrary.view.circularprogressbutton.CircularProgressButton
+                android:id="@+id/circularButton7"
+                android:layout_width="196dp"
+                android:layout_height="64dp"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                app:cpb_cornerRadius="48dp"
+                app:cpb_paddingProgress="10dp"
+                app:cpb_textComplete="@string/Complete"
+                app:cpb_textError="@string/Error"
+                app:cpb_textIdle="@string/Upload" />
+
+            <com.doris.peachlibrary.view.circularprogressbutton.CircularProgressButton
+                android:id="@+id/circularButton8"
+                android:layout_width="196dp"
+                android:layout_height="64dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="16dp"
+                android:layout_marginTop="16dp"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                app:cpb_cornerRadius="48dp"
+                app:cpb_paddingProgress="10dp"
+                app:cpb_textComplete="@string/Complete"
+                app:cpb_textError="@string/Error"
+                app:cpb_textIdle="@string/Upload" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dip"
+                android:text="@string/customSelectorSample"
+                android:textColor="@color/gray" />
+
+            <com.doris.peachlibrary.view.circularprogressbutton.CircularProgressButton
+                android:id="@+id/circularButton9"
+                android:layout_width="196dp"
+                android:layout_height="64dp"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                app:cpb_cornerRadius="48dp"
+                app:cpb_selectorComplete="@drawable/complete_state_selector"
+                app:cpb_selectorError="@drawable/error_state_selector"
+                app:cpb_selectorIdle="@drawable/idle_state_selector"
+                app:cpb_textComplete="@string/Complete"
+                app:cpb_textError="@string/Error"
+                app:cpb_textIdle="@string/Upload" />
+
+            <com.doris.peachlibrary.view.circularprogressbutton.CircularProgressButton
+                android:id="@+id/circularButton10"
+                android:layout_width="196dp"
+                android:layout_height="64dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="16dp"
+                android:layout_marginTop="16dp"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                app:cpb_cornerRadius="48dp"
+                app:cpb_selectorComplete="@drawable/complete_state_selector"
+                app:cpb_selectorError="@drawable/error_state_selector"
+                app:cpb_selectorIdle="@drawable/idle_state_selector"
+                app:cpb_textComplete="@string/Complete"
+                app:cpb_textError="@string/Error"
+                app:cpb_textIdle="@string/Upload" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

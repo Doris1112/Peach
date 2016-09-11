@@ -1,0 +1,168 @@
+﻿一、如何显示assets/text.txt（中文）的内容
+方法1：InputStream.available()得到字节数，然后一次读取完。
+	private String readUserAgreementFromAsset(String assetName) {
+		String content = "";
+		try {
+			InputStream is = getAssets().open(assetName);
+			if (is != null) {
+				DataInputStream dIs = new DataInputStream(is);
+				int length = dIs.available();
+				byte[] buffer = new byte[length];
+				dIs.read(buffer);
+				content = EncodingUtils.getString(buffer, "UTF-8");
+				is.close();
+			}
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+		return content;
+
+	}
+
+方法2：用BufferedReader.readLine()行读取再加换行符，最后用StringBuilder.append()连接成字符串。
+A.以下是先行读取再转码UTF8：
+	private String readUserAgreementFromAsset(String assetName) {
+		StringBuilder sb = new StringBuilder("");
+		String content = "";
+		try {
+			InputStream is = getAssets().open(assetName);
+			if (is != null) {
+				BufferedReader d = new BufferedReader(new InputStreamReader(is));
+				while (d.ready()) {
+					sb.append(d.readLine() + "\n");
+				}
+				content = EncodingUtils.getString(sb.toString().getBytes(), "UTF-8");
+				is.close();
+			}
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+		return content;
+	}
+
+B.以下是InputStreamReader先指定以UTF8读取文件，再进行读取读取操作：
+	private String readUserAgreementFromAsset(String assetName) {
+		StringBuilder sb = new StringBuilder("");
+		String content = "";
+		try {
+			InputStream is = getAssets().open(assetName);
+			if (is != null) {
+				BufferedReader d = new BufferedReader(new InputStreamReader(is, "UTF-8"));
+				while (d.ready()) {
+					sb.append(d.readLine() + "\n");
+				}
+				content = sb.toString();
+				is.close();
+			}
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+		return content;
+	}
+另外，UTF8转码也可以用new String(buffer, “utf-8”)。
+
+方法3：没有设置编码的时候可能会乱码，如果txt文档编码是UTF-8则不会乱码
+	private String getFromAssets(String fileName) {
+		String Result = "";
+		try {
+			InputStreamReader inputReader = new InputStreamReader(getResources().getAssets().open(fileName));
+			BufferedReader bufReader = new BufferedReader(inputReader);
+			String line = "";
+			while ((line = bufReader.readLine()) != null)
+				Result += line + "\n";
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		return Result;
+	}
+
+	public String getFromRaw(){ 
+		String Result="";
+            	try { 
+                	InputStreamReader inputReader = new InputStreamReader( getResources().openRawResource(R.raw.text));
+                	BufferedReader bufReader = new BufferedReader(inputReader);
+                	String line="";
+                	while((line = bufReader.readLine()) != null)
+                    	Result += line+ "\n";
+            	} catch (Exception e) { 
+                	e.printStackTrace(); 
+            	}
+		return Result;             
+    	} 
+
+二、Android中读写文件
+(1) 从resource中的raw文件夹中获取文件并读取数据（资源文件只能读不能写，\res\raw\text.txt）
+String res = ""; 
+try{ 
+	InputStream in = getResources().openRawResource(R.raw.text);
+	int length = in.available();
+	byte [] buffer = new byte[length];
+	in.read(buffer);
+	res = EncodingUtils.getString(buffer,"UTF-8");//选择合适的编码，如果不调整会乱码
+	in.close();
+}catch(Exception e){
+	e.printStackTrace();
+}
+
+(2) 从asset中获取文件并读取数据（资源文件只能读不能写，\assets\text.txt）
+与raw文件夹类似，只是：
+InputStream is = getAssets().open(“text.txt”);
+
+(3) 私有文件夹下的文件存取（/data/data/包名/files/text.txt）
+使用openFileOutput写文件：
+	public void writeFileData(String fileName,String message){
+        	try{
+			FileOutputStream fos =openFileOutput(fileName,MODE_PRIVATE);
+        		byte [] bytes =message.getBytes();
+        		fos.write(bytes);
+        		fos.close();
+        	}catch(Exception e){
+        		e.printStackTrace();
+
+		}
+	}
+
+使用openFileInput读文件：
+	public String readFileData(String fileName){
+    		String str = “”;
+        	try{
+			FileInputStream fis =openFileInput(fileName);
+        		int length = fis	.available();
+        		byte [] bytes = new byte[length];
+        		fis.read(bytes);
+        		str = EncodingUtils.getString(bytes,"UTF-8");
+        		fis.close();
+        	}catch(Exception e){
+        		e.printStackTrace();
+		}
+		return str;
+	}
+
+(4) sdcard目录下的文件存取（/mnt/sdcard/）
+使用FileOutputStream写文件：
+	public void writeFile2Sdcard(String fileName,String message){
+    		try{
+             		FileOutputStream fos = new FileOutputStream(fileName);
+        		byte [] bytes =message.getBytes();
+        		fos.write(bytes);
+        		fos.close();
+        	}catch(Exception e){
+        		e.printStackTrace();
+    		}
+	}
+
+使用FileInputStream读文件：
+	public String readFileFromSdcard(String fileName){
+    		String res="";
+    		try{
+        		FileInputStream fis = new FileInputStream(fileName);
+        		int length =fis.available();
+        		byte [] buffer = new byte[length];
+        		fis.read(buffer);
+        		res =EncodingUtils.getString(buffer, "UTF-8");
+        		fis.close();
+    		}catch(Exception e){
+         		e.printStackTrace();
+    		}
+    		return res;
+	}

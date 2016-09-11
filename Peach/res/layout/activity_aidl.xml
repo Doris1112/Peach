@@ -1,0 +1,43 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/tv_activity_title"
+        style="@style/titlePeach" />
+
+    <ScrollView
+        style="@style/contentPeach" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <EditText
+                android:id="@+id/et_aidl_username"
+                style="@style/edittextWhiteFrame"
+                android:hint="@string/TheDefaultUserNameAdmin"
+                android:maxLength="20" />
+
+            <EditText
+                android:id="@+id/et_aidl_password"
+                style="@style/edittextWhiteFrame"
+                android:hint="@string/TheDefaultPassword123456"
+                android:inputType="textPassword"
+                android:maxLength="20" />
+
+            <Button
+                style="@style/buttonWhiteFrame"
+                android:onClick="login"
+                android:text="@string/login" />
+
+            <Button
+                style="@style/buttonWhiteFrame"
+                android:onClick="installPeachLoginApk"
+                android:text="@string/installPeachLoginApk" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

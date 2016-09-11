@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/peachThemeColor"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/activity_paddingLeft"
+    android:paddingRight="@dimen/activity_paddingRight"
+    android:paddingBottom="@dimen/activity_paddingBottom"
+    android:paddingTop="@dimen/activity_paddingTop_statusBar" >
+
+    <TextView
+        style="@style/text8ptWhite"
+        android:text="@string/togglebutton_reailze" />
+
+    <ToggleButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@android:color/transparent"
+        android:button="@drawable/toggle_btn"
+        android:checked="false"
+        android:textColor="@android:color/white" />
+
+    <TextView
+        style="@style/text8ptWhite"
+        android:text="@string/imitation_ios7" />
+
+    <ToggleButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@android:color/transparent"
+        android:button="@drawable/ios7_btn"
+        android:checked="false"
+        android:textColor="@android:color/white" />
+
+    <ToggleButton
+        android:id="@+id/tb_switchbutton"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@android:color/transparent"
+        android:button="@drawable/checkbox_iphone"
+        android:checked="false"
+        android:text=""
+        android:textOff=""
+        android:textOn="" />
+
+    <TextView
+        style="@style/text8ptWhite"
+        android:text="@string/auto_checkbox_enable_is_true" />
+
+    <com.doris.peachlibrary.view.CheckSwitchButton
+        android:id="@+id/csb_switchbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:enabled="true" />
+
+    <TextView
+        style="@style/text8ptWhite"
+        android:text="@string/with_up_switch_change_enable" />
+
+    <com.doris.peachlibrary.view.CheckSwitchButton
+        android:id="@+id/csb_switchbutton1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center" />
+
+    <TextView
+        style="@style/text8ptWhite"
+        android:text="@string/auto_compoundbutton_switch" />
+
+    <com.doris.peachlibrary.view.SwitchButton
+        style="@style/Switch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="3dip"
+        android:clickable="true" />
+
+    <TextView
+        style="@style/text8ptWhite"
+        android:text="@string/auto_view_switch" />
+
+    <com.doris.peachlibrary.view.PeachSwitchButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:enabled="true" />
+
+</LinearLayout>

@@ -1,0 +1,74 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/peachThemeColor"
+    android:clipChildren="false"
+    android:paddingBottom="@dimen/activity_paddingBottom"
+    android:paddingLeft="@dimen/activity_paddingLeft"
+    android:paddingRight="@dimen/activity_paddingRight"
+    android:paddingTop="@dimen/activity_paddingTop_statusBar" >
+
+    <com.doris.peachlibrary.view.loadingview.MetaballView
+        android:id="@+id/metaball"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true" />
+
+    <com.doris.peachlibrary.view.loadingview.MetaballDebugView
+        android:id="@+id/debug_metaball"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/metaball"
+        android:layout_alignRight="@+id/metaball"
+        android:layout_below="@+id/metaball"
+        android:layout_marginTop="20dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:clickable="true"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/maximumInterval"
+            android:textColor="@android:color/white" />
+
+        <SeekBar
+            android:id="@+id/sb_mi"
+            style="@style/Widget.SeekBar.Normal.Gray"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="400" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/BezierCurveAngle"
+            android:textColor="@android:color/white" />
+
+        <SeekBar
+            android:id="@+id/sb_bca"
+            style="@style/Widget.SeekBar.Normal.Gray"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="200" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/BezierControlLengthRatio"
+            android:textColor="@android:color/white" />
+
+        <SeekBar
+            android:id="@+id/sb_bclr"
+            style="@style/Widget.SeekBar.Normal.Gray"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="500" />
+    </LinearLayout>
+
+</RelativeLayout>

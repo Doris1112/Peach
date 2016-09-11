@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/peachThemeColor"
+    android:paddingBottom="@dimen/activity_paddingBottom"
+    android:paddingLeft="@dimen/activity_paddingLeft"
+    android:paddingRight="@dimen/activity_paddingRight"
+    android:paddingTop="@dimen/activity_paddingTop_statusBar" >
+
+    <Button
+        android:id="@+id/b_save"
+        style="@style/buttonWhiteFrame"
+        android:layout_alignParentRight="true"
+        android:text="@string/save" />
+
+    <EditText
+        android:id="@+id/et_notebook"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/b_save"
+        android:background="@drawable/shape_whiteframe_normal"
+        android:gravity="start"
+        android:hint="@string/inHereInputText"
+        android:padding="@dimen/pickerview_topbar_paddingleft"
+        android:scrollbarThumbVertical="@drawable/ic_scrollbar"
+        android:scrollbars="vertical"
+        android:textColor="@android:color/white"
+        android:textColorHint="@color/font_gray" />
+
+</RelativeLayout>

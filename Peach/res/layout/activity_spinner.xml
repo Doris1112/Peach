@@ -1,0 +1,59 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/tv_activity_title"
+        style="@style/titlePeach" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/peachThemeColor"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/activity_paddingBottom"
+        android:paddingLeft="@dimen/activity_paddingLeft"
+        android:paddingRight="@dimen/activity_paddingRight"
+        android:paddingTop="@dimen/activity_paddingTop" >
+
+        <Spinner
+            android:id="@+id/s_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="40dip"
+            android:layout_marginBottom="@dimen/activity_padding"
+            android:background="@drawable/selector_btn_white_frame"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/activity_padding" />
+
+        <Spinner
+            android:id="@+id/s_spinner_two"
+            android:layout_width="match_parent"
+            android:layout_height="40dip"
+            android:layout_marginBottom="@dimen/activity_padding"
+            android:background="@drawable/selector_btn_white_frame"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/activity_padding" />
+
+        <Spinner
+            android:id="@+id/s_spinner_three"
+            android:layout_width="match_parent"
+            android:layout_height="40dip"
+            android:background="@drawable/selector_btn_white_frame"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/activity_padding" />
+
+        <com.doris.peachlibrary.view.CustomSpinner
+            android:id="@+id/cs_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="40dip"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="20dip"
+            android:background="@drawable/selector_btn_white_frame"
+            android:text="@string/custom_spinner"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+
+</LinearLayout>

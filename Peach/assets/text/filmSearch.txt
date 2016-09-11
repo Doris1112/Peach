@@ -1,0 +1,176 @@
+﻿[
+  {
+    "name": "上映时间",
+    "key": "ReleaseTime",
+    "value": [
+      {
+        "checked": true,
+        "condition": "所有时间",
+        "value": "0"
+      },
+      {
+        "checked": false,
+        "condition": "2010年以前",
+        "value": "<2010"
+      },
+      {
+        "checked": false,
+        "condition": "2011年",
+        "value": "2011"
+      },
+      {
+        "checked": false,
+        "condition": "2012年",
+        "value": "2012"
+      },
+      {
+        "checked": false,
+        "condition": "2013年",
+        "value": "2013"
+      },
+      {
+        "checked": false,
+        "condition": "2014年",
+        "value": "2014"
+      },
+      {
+        "checked": false,
+        "condition": "2015年",
+        "value": "2015"
+      },
+      {
+        "checked": false,
+        "condition": "2016年",
+        "value": "2016"
+      }
+    ]
+  },
+  {
+    "name": "上映地区",
+    "key": "Area",
+    "value": [
+      {
+        "checked": true,
+        "condition": "全部",
+        "value": "All"
+      },
+      {
+        "checked": false,
+        "condition": "美国",
+        "value": "USA"
+      },
+      {
+        "checked": false,
+        "condition": "日本",
+        "value": "Japan"
+      },
+      {
+        "checked": false,
+        "condition": "大陆",
+        "value": "China"
+      },
+      {
+        "checked": false,
+        "condition": "韩国",
+        "value": "Korea"
+      }
+    ]
+  },
+  {
+    "name": "类型",
+    "key": "Type",
+    "value": [
+      {
+        "checked": true,
+        "condition": "全部",
+        "value": "All"
+      },
+      {
+        "checked": false,
+        "condition": "爱情片",
+        "value": "AiQing"
+      },
+      {
+        "checked": false,
+        "condition": "动作片",
+        "value": "DongZuo"
+      },
+      {
+        "checked": false,
+        "condition": "灾难片",
+        "value": "ZaiNan"
+      },
+      {
+        "checked": false,
+        "condition": "科幻片",
+        "value": "KeHuan"
+      },
+      {
+        "checked": false,
+        "condition": "剧情片",
+        "value": "JuQing"
+      }
+    ]
+  },
+  {
+    "name": "演员",
+    "key": "Actor",
+    "value": [
+      {
+        "checked": true,
+        "condition": "全部",
+        "value": "All"
+      },
+      {
+        "checked": false,
+        "condition": "约翰尼·德普",
+        "value": "约翰尼·德普"
+      },
+      {
+        "checked": false,
+        "condition": "达斯汀·霍夫曼",
+        "value": "达斯汀·霍夫曼"
+      },
+      {
+        "checked": false,
+        "condition": "安妮·海瑟薇",
+        "value": "安妮·海瑟薇"
+      },
+      {
+        "checked": false,
+        "condition": "马特·达蒙",
+        "value": "马特·达蒙"
+      },
+      {
+        "checked": false,
+        "condition": "白百合",
+        "value": "白百合"
+      },
+      {
+        "checked": false,
+        "condition": "新亘结衣",
+        "value": "新亘结衣"
+      },
+      {
+        "checked": false,
+        "condition": "玛德琳·卡罗尔",
+        "value": "玛德琳·卡罗尔"
+      },
+      {
+        "checked": false,
+        "condition": "莱昂纳多·迪卡普里奥",
+        "value": "莱昂纳多·迪卡普里奥"
+      },
+      {
+        "checked": false,
+        "condition": "汤姆·汉克斯",
+        "value": "汤姆·汉克斯"
+      },
+      {
+        "checked": false,
+        "condition": "艾玛·罗伯茨",
+        "value": "艾玛·罗伯茨"
+      }
+    ]
+  }
+]
